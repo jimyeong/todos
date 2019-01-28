@@ -1,0 +1,44 @@
+.header{
+  background-color: #7f7f7f;
+  -webkit-box-shadow: 1px 1px 10px rgba(0,0,0,0.12);
+  -moz-box-shadow: 1px 1px 10px rgba(0,0,0,0.12);
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.12);
+  nav{
+    text-align: center;
+    ul{
+      display: inline-block;
+      .nav-item{
+        float: left;
+        .nav-link{
+          text-transform: capitalize;
+          display: block;
+          padding: 20px 30px;
+          color: #ffffff;
+          span{
+            display: block;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eeeeee;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+
+
+          }
+        }
+        &:hover{
+          .nav-link{
+            > span{
+              -webkit-transform: rotateY(360deg);
+              -moz-transform: rotateY(360deg);
+              -ms-transform: rotateY(360deg);
+              -o-transform: rotateY(360deg);
+              transform: rotateY(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

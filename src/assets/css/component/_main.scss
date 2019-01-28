@@ -1,0 +1,152 @@
+/**
+Main Page
+ */
+.wrapper{
+  padding: 90px 0;
+  .title-area{
+    margin-bottom: 30px;
+    text-align: center;
+    h3{
+      font-size: 28px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    p{
+      color: #333333;
+      font-weight: lighter;
+    }
+  }
+
+}
+.contents-area{
+  text-align: center;
+  .create-todo-list{
+    width: 900px;
+    margin: 0 auto;
+    > form{
+      .form-wrap{
+        .input-group{
+          position: relative;
+          padding-left: 54px;
+          padding-right: 180px;
+          .btn-area{
+            padding-left: 15px;
+            position: absolute;
+            top: -9px;
+            right: 64px;
+            > .btn{
+              padding: 20px 25px;
+
+
+            }
+
+
+          }
+        }
+      }
+    }
+
+  }
+  .tab-menu{
+    display: inline-block;
+    -webkit-box-shadow: 1px 1px 10px rgba(0,0,0,0.12);
+    -moz-box-shadow: 1px 1px 10px rgba(0,0,0,0.12);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.12);
+    border: 2px solid #000;
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 45px 0;
+
+    > ul{
+      display: inline-block;
+      > li{
+        width: 125px;
+        height: 60px;
+        float: left;
+        > .tab-btn{
+          padding: 20px 30px;
+          display: block;
+          text-transform: uppercase;
+          color: #08c;
+          font-weight: 400;
+          font-size: 17px;
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          -ms-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          transition: all 0.2s;
+
+        }
+        &:hover{
+          > .tab-btn{
+            font-size: 19px;
+            color: #474747;
+          }
+        }
+      }
+
+    }
+
+  }
+  .wrap-component{
+    > li{
+      float: left;
+      width: 33.333%;
+      .item{
+        padding: 20px;
+        .thumb{
+          overflow: hidden;
+          height: 235px;
+        }
+        .desc{
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .todos-item{
+    width: 800px;
+    margin: 40px auto;
+    .todos-item-list{
+      position: relative;
+
+      .task{
+        min-height: 60px;
+        line-height: 1.8;
+        padding: 10px;
+        > form{
+          .form-wrap{
+            .input-group{
+              padding-left: 0;
+              padding-right: 180px;
+            }
+          }
+        }
+      }
+      .btn-area{
+        padding-right: 15px;
+        position: absolute;
+        z-index: 1000;
+        right: 0;
+        top: 11px;
+        > .btn{
+          padding: 10px 24px;
+          color: #eeeeee;
+          margin-left: 15px;
+        }
+      }
+      &:hover{
+        .task{
+          background-color: #f8f6f8;
+        }
+      }
+    }
+  }
+}
+
+// Common Modules
